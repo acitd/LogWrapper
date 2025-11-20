@@ -99,6 +99,19 @@ else
 	MESSAGE_EXPANDED="$MESSAGE"
 fi
 
+CMD_OUTPUT=""
+if [[ ${#COMMAND_ARGS[@]} -gt 0 ]]; then
+	CMD_OUTPUT="$("${COMMAND_ARGS[@]}")"
+fi
+echo "$CMD_OUTPUT"
+
+if [[ "$MESSAGE_EXPANDED" == *"{nl}"* ]]; then
+	MESSAGE_EXPANDED="${MESSAGE_EXPANDED//\{nl\}/$'\n'}"
+fi
+if [[ "$MESSAGE_EXPANDED" == *"{out}"* ]]; then
+	MESSAGE_EXPANDED="${MESSAGE_EXPANDED//\{out\}/$CMD_OUTPUT}"
+fi
+
 mkdir -p "$(dirname "$FILE_PATH_EXPANDED")"
 
 if [[ -n "$SIZE" ]]; then
@@ -107,7 +120,3 @@ if [[ -n "$SIZE" ]]; then
 fi
 
 echo "$MESSAGE_EXPANDED" >> "$FILE_PATH_EXPANDED"
-
-if [[ ${#COMMAND_ARGS[@]} -gt 0 ]]; then
-	"${COMMAND_ARGS[@]}"
-fi
