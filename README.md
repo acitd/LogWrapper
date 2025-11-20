@@ -21,7 +21,7 @@ cd LogWrapper
 chmod +x src/main.sh
 # Copy src/main.sh anywhere you like and rename it to logwrapper.
 # For example:
-cp srm/main.sh ~/.local/bin/logwrapper
+cp src/main.sh ~/.local/bin/logwrapper
 ````
 
 ## Usage
