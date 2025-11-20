@@ -50,7 +50,7 @@ logwrapper -p logs/output -m "Hello World" -s 1M
 Append a message with date formatting and run a command:
 
 ```bash
-logwrapper --path logs/%Y-%m-%d -m "Log entry %H:%M" ls -l
+logwrapper --path logs/%Y-%m-%d -m "--- Log entry %H:%M ---{nl}Hello World" ls -l
 ```
 
 ## How It Works
@@ -58,6 +58,9 @@ logwrapper --path logs/%Y-%m-%d -m "Log entry %H:%M" ls -l
 1. **Date Formatting:** You can use `date` placeholders like `%Y-%m-%d` or `%H:%M` in both file paths and messages.
 2. **File Rotation:** If the log file exceeds the specified size, it is renamed with a numeric suffix, and a new log file is created.
 3. **Command Execution:** Any arguments after options are treated as a command to execute after logging.
+4. **Message Placeholders:**
+   * `{out}` replaced with the output of the executed command.
+   * `{nl}`  replaced with an actual newline in the log message.
 
 ## Contributing
 
