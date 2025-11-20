@@ -19,9 +19,9 @@ Clone this repository:
 git clone https://github.com/yourusername/LogWrapper.git
 cd LogWrapper
 chmod +x src/main.sh
-# Move src/main.sh anywhere you like and rename it to logwrapper.
+# Copy src/main.sh anywhere you like and rename it to logwrapper.
 # For example:
-mv srm/main.sh ~/.local/bin/logwrapper
+cp srm/main.sh ~/.local/bin/logwrapper
 ````
 
 ## Usage
