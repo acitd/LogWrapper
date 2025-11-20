@@ -20,12 +20,14 @@ git clone https://github.com/yourusername/LogWrapper.git
 cd LogWrapper
 chmod +x src/main.sh
 # Move src/main.sh anywhere you like and rename it to logwrapper.
+# For example:
+mv srm/main.sh ~/.local/bin/logwrapper
 ````
 
 ## Usage
 
 ```bash
-./logwrapper [OPTIONS] [COMMAND [ARGS...]]
+logwrapper [OPTIONS] [COMMAND [ARGS...]]
 ```
 
 ### Options
@@ -42,13 +44,13 @@ chmod +x src/main.sh
 Append a message with max file size rotation:
 
 ```bash
-./logwrapper -p logs/output -m "Hello World" -s 1M
+logwrapper -p logs/output -m "Hello World" -s 1M
 ```
 
 Append a message with date formatting and run a command:
 
 ```bash
-./logwrapper --path logs/%Y-%m-%d -m "Log entry %H:%M" ls -l
+logwrapper --path logs/%Y-%m-%d -m "Log entry %H:%M" ls -l
 ```
 
 ## How It Works
