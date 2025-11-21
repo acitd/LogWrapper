@@ -44,19 +44,19 @@ logwrapper [OPTIONS] [COMMAND [ARGS...]]
 Log a message with max file size rotation:
 
 ```bash
-logwrapper -p ~/.local/share/log/logwrapper/hello-world/test.log -m "Hello World" -s 1M
+logwrapper -p ~/.local/share/logwrapper/hello-world/test.log -m "Hello World" -s 1M
 ```
 
 Log a message with date formatting and run a command:
 
 ```bash
-logwrapper --path ~/.local/share/log/logwrapper/hello-world/%Y-%m-%d.log -m "Message at %H:%M:%S{nl}Hello World" ls -l
+logwrapper --path ~/.local/share/logwrapper/hello-world/%Y-%m-%d.log -m "Message at %H:%M:%S{nl}Hello World" ls -l
 ```
 
 Log each time the `ls` command is used:
 
 ```bash
-alias ls='logwrapper --path ~/.local/share/log/logwrapper/ls/%Y-%m-%d.log -m "Ls used at %R:%S" /bin/ls'
+alias ls='logwrapper --path ~/.local/share/logwrapper/ls/%Y-%m-%d.log -m "Ls used at %R:%S" /bin/ls'
 ```
 
 ## How It Works
