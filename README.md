@@ -19,7 +19,7 @@ Clone this repository:
 # 1. Download the logwrapper.
 curl -L -o logwrapper https://raw.githubusercontent.com/acitd/LogWrapper/main/src/main.sh && chmod +x logwrapper
 # 2. Move the logwrapper anywhere you like. For example:
-mv logwrapper ~/.local/bin/logwrapper
+mv logwrapper ~/.local/bin
 ````
 
 ## Usage
