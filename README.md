@@ -53,6 +53,12 @@ Log a message with date formatting and run a command:
 logwrapper --path ~/.local/share/log/logwrapper/hello-world/%Y-%m-%d.log -m "Message at %H:%M{nl}Hello World" ls -l
 ```
 
+Log each time is called the `ls` command:
+
+```bash
+alias ls='logwrapper --path ~/.local/share/log/logwrapper/ls/%Y-%m-%d.log -m "Ls used at %H:%M" /bin/ls'
+```
+
 ## How It Works
 
 1. **Date Formatting:** You can use `date` placeholders like `%Y-%m-%d` or `%H:%M` in both file paths and messages.
