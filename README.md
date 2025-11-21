@@ -35,9 +35,9 @@ logwrapper [OPTIONS] [COMMAND [ARGS...]]
 | Option          | Description                                              |
 | --------------- | -------------------------------------------------------- |
 | `-m, --message` | Message to append to the file (required)                 |
-| `-p, --path`    | Path to the file (required)           |
+| `-p, --path`    | Path to the file (required)                              |
 | `-s, --size`    | Max file size before rotating (e.g., `1M`, `500K`, `2G`) |
-| `-h, --help`    | Show this help message and exit                          |
+| `-h, --help`    | Show a help message                                      |
 
 ### Examples
 
