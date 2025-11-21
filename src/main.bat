@@ -13,13 +13,13 @@ set "COMMAND_ARGS="
 	echo   -m, --message MESSAGE   Message to append to the file (required)
 	echo   -p, --path FILE         Path to the file (without extension, required)
 	echo   -s, --size SIZE         Max file size before rotating (e.g., 1M, 500K, 2G)
-	echo   -h, --help              Show this help message and exit
+	echo   -h, --help              Show a help message
 	echo.
 	echo Any arguments after options are treated as a command to execute with its arguments.
 	echo.
 	echo Examples:
-	echo   %~nx0 -p logs\output -m "Hello World" -s 1M
-	echo   %~nx0 --path logs\%%DATE%% -m "Log entry %%TIME%%" -- dir
+	echo   logwrapper -p logs\output.log -m "Hello World" -s 1M
+	echo   logwrapper --path logs\%%DATE%% -m "Log entry %%TIME%%" dir
 	exit /b 0
 
 :size_to_bytes
