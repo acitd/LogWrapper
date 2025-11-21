@@ -18,8 +18,8 @@ Options:
 Any arguments after options are treated as a command to execute with its arguments.
 
 Examples:
-  $0 -p logs/output -m "Hello World" -s 1M
-  $0 --path logs/%Y-%m-%d -m "Log entry %H:%M" -- ls -l
+  logwrapper -p logs/output.log -m "Hello World" -s 1M
+  logwrapper --path logs/%Y-%m-%d.log -m "Log entry %H:%M" ls -l
 EOF
 }
 
