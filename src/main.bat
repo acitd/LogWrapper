@@ -19,7 +19,7 @@ set "COMMAND_ARGS="
 	echo.
 	echo Examples:
 	echo   logwrapper -p logs\output.log -m "Hello World" -s 1M
-	echo   logwrapper --path logs\%%DATE%% -m "Log entry %%TIME%%" dir
+	echo   logwrapper --path logs\%%DATE%%.log -m "Log entry %%TIME%%" dir
 	exit /b 0
 
 :size_to_bytes
