@@ -53,7 +53,7 @@ Log a message with date formatting and run a command:
 logwrapper --path ~/.local/share/log/logwrapper/hello-world/%Y-%m-%d.log -m "Message at %H:%M:%S{nl}Hello World" ls -l
 ```
 
-Log each time is called the `ls` command:
+Log each time the `ls` command is used:
 
 ```bash
 alias ls='logwrapper --path ~/.local/share/log/logwrapper/ls/%Y-%m-%d.log -m "Ls used at %R:%S" /bin/ls'
