@@ -50,7 +50,7 @@ logwrapper -p ~/.local/share/log/logwrapper/hello-world/test.log -m "Hello World
 Log a message with date formatting and run a command:
 
 ```bash
-logwrapper --path ~/.local/share/log/logwrapper/hello-world/%Y-%m.log -m "Message at %H:%M{nl}Hello World" ls -l
+logwrapper --path ~/.local/share/log/logwrapper/hello-world/%Y-%m-%d.log -m "Message at %H:%M{nl}Hello World" ls -l
 ```
 
 ## How It Works
