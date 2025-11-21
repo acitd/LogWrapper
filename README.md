@@ -35,22 +35,22 @@ logwrapper [OPTIONS] [COMMAND [ARGS...]]
 | Option          | Description                                              |
 | --------------- | -------------------------------------------------------- |
 | `-m, --message` | Message to append to the file (required)                 |
-| `-p, --path`    | Path to the file (without extension, required)           |
+| `-p, --path`    | Path to the file (required)           |
 | `-s, --size`    | Max file size before rotating (e.g., `1M`, `500K`, `2G`) |
 | `-h, --help`    | Show this help message and exit                          |
 
 ### Examples
 
-Append a message with max file size rotation:
+Log a message with max file size rotation:
 
 ```bash
-logwrapper -p logs/output -m "Hello World" -s 1M
+logwrapper -p ~/.local/share/log/logwrapper/hello-world/test.log -m "Hello World" -s 1M
 ```
 
-Append a message with date formatting and run a command:
+Log a message with date formatting and run a command:
 
 ```bash
-logwrapper --path logs/%Y-%m-%d -m "--- Log entry %H:%M ---{nl}Hello World" ls -l
+logwrapper --path ~/.local/share/log/logwrapper/hello-world/%Y-%m.log -m "Message at %H:%M{nl}Hello World" ls -l
 ```
 
 ## How It Works
