@@ -13,8 +13,6 @@ LogWrapper is a utility that lets you run commands while appending messages to l
 
 ## Installation
 
-Clone this repository:
-
 ```bash
 # 1. Download the logwrapper.
 curl -L -o logwrapper https://raw.githubusercontent.com/acitd/LogWrapper/main/src/main.sh && chmod +x logwrapper
