@@ -129,7 +129,7 @@ type "%OUTPUT_FILE%" >> "%FILE_PATH_EXPANDED%"
 exit /b 0
 
 :show_help
-echo Usage: logappend.bat [OPTIONS] [COMMAND [ARGS...]]
+echo Usage: logwrapper.bat [OPTIONS] [COMMAND [ARGS...]]
 echo.
 echo Options:
 echo   -m, --message MESSAGE   Message to append to the file (required)
