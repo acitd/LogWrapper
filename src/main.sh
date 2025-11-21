@@ -88,9 +88,9 @@ if [[ -z "$MESSAGE" ]]; then
 fi
 
 if [[ "$FILE_PATH" == *%* ]]; then
-	FILE_PATH_EXPANDED="$(date +"$FILE_PATH").log"
+	FILE_PATH_EXPANDED="$(date +"$FILE_PATH")"
 else
-	FILE_PATH_EXPANDED="$FILE_PATH.log"
+	FILE_PATH_EXPANDED="$FILE_PATH"
 fi
 
 if [[ "$MESSAGE" == *%* ]]; then
