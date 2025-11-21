@@ -13,7 +13,7 @@ Options:
   -m, --message MESSAGE   Message to append to the file (required)
   -p, --path FILE         Path to the file (without extension, required)
   -s, --size SIZE         Max file size before rotating (e.g., 1M, 500K, 2G)
-  -h, --help              Show this help message and exit
+  -h, --help              Show a help message
 
 Any arguments after options are treated as a command to execute with its arguments.
 
