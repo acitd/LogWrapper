@@ -16,7 +16,7 @@ LogWrapper is a utility that lets you run commands while appending messages to l
 Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/LogWrapper.git
+git clone https://github.com/acitd/LogWrapper.git
 cd LogWrapper
 chmod +x src/main.sh
 # Copy src/main.sh anywhere you like and rename it to logwrapper.
