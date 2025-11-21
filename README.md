@@ -69,3 +69,6 @@ Feel free to fork, open issues, or submit pull requests.
 ## Author
 
 Alex Costantino - [acitd.com](https://www.acitd.com/)
+
+[Read the article](https://www.acitd.com/article/25/logwrapper)
+
